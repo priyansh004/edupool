@@ -32,7 +32,7 @@ function SignupPage() {
 
         // else successful
         console.log(result)
-        return router.push("/")
+        return router.push("/courses")
     };
 
     const handleLoginClick = () => {

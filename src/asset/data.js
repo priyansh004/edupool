@@ -1,0 +1,51 @@
+export  const courses = [
+  {
+    id: 1,
+    title: 'React for Beginners',
+    description: 'Learn the basics of React and how to build modern web applications.',
+    instructor: 'John Doe',
+    image: 'https://example.com/advanced-js-course.jpg',
+    price: 1,
+  },
+  {
+    id: 2,
+    title: 'Advanced JavaScript',
+    description: 'Deep dive into advanced JavaScript concepts and techniques.',
+    instructor: 'Jane Smith',
+    image: 'https://example.com/advanced-js-course.jpg',
+    price: 1,
+  },
+  {
+    id: 3,
+    title: 'CSS Mastery',
+    description: 'Master CSS and create beautiful and responsive web designs.',
+    instructor: 'Michael Lee',
+    image: 'https://example.com/css-mastery-course.jpg',
+    price: 1,
+  },
+  {
+    id: 4,
+    title: 'Node.js Essentials',
+    description: 'Learn the fundamentals of Node.js and build scalable server-side applications.',
+    instructor: 'Emily Green',
+    image: 'https://example.com/nodejs-course.jpg',
+    price: 1,
+  },
+  {
+    id: 5,
+    title: 'Node.js Essentials',
+    description: 'Learn the fundamentals of Node.js and build scalable server-side applications.',
+    instructor: 'Emily Green',
+    image: 'https://example.com/nodejs-course.jpg',
+    price: 1,
+  },
+  {
+    id: 6,
+    title: 'Node.js Essentials',
+    description: 'Learn the fundamentals of Node.js and build scalable server-side applications.',
+    instructor: 'Emily Green',
+    image: 'https://example.com/nodejs-course.jpg',
+    price: 1,
+  },
+  
+];

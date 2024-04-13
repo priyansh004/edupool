@@ -21,7 +21,7 @@ function Page() {
 
         // else successful
         console.log(result)
-        return router.push("/")
+        return router.push("/courses")
     }
     const handleSignupClick = () => {
         router.push('/signup');
@@ -29,7 +29,7 @@ function Page() {
     return (<div className="wrapper">
         <div className="flex flex-row justify-center items-center m-2 gap-36 h-svh">
             <div className="flex justify-center items-center m-8">
-                <Image src={landing} height={300} width={400} className=" max-h-200 min-h-100 max-w-400 min-w-200" />
+                <Image alt="course"src={landing} height={300} width={400} className=" max-h-200 min-h-100 max-w-400 min-w-200" />
 
             </div>
 
