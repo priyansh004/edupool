@@ -6,7 +6,7 @@ import saved from "@/asset/saved.png";
 import notsaved from "@/asset/notsaved.png";
 import Link from "next/link";
 
-const CourseCard = ({ course }) => {
+const CourseCard = ({id,title ,description, instructor, image  ,price}) => {
   const [isSaved, setIsSaved] = useState(false);
 
   const handleSaveToggle = () => {
@@ -16,19 +16,19 @@ const CourseCard = ({ course }) => {
   const handlecourseinfo = () => {};
   return (
     <div className="bg-lime-50 shadow-md rounded-lg overflow-hidden min-w-[200px]">
-      <Image src={c} alt="course.title" className=" w-full h-48 object-cover" />
+      <Image src={image} alt="course.title" className=" w-full h-48 object-cover" />
 
       <div className="p-4 bg-emerald-200">
-        <h3 className="text-lg font-bold mb-2">{course.title}</h3>
-        <p className="mt-4 text-gray-500">{`Instructor: ${course.instructor}`}</p>
-        <p className="mt-2 text-gray-900 font-bold">{`Price: $${course.price}`}</p>
+        <h3 className="text-lg font-bold mb-2">{title}</h3>
+        <p className="mt-4 text-gray-500">{`Instructor: ${instructor}`}</p>
+        <p className="mt-2 text-gray-900 font-bold">{`Price: $${price}`}</p>
         <div className="flex flex-row justify-between align-center ">
           <div>
             <button
               onClick={handlecourseinfo}
               className="mt-4 bg-emerald-700 text-white py-2 px-4 rounded-lg self-start"
             >
-              <Link href={`/courses/${course.id}`}>
+              <Link href={`/courses/${id}`}>
                 Show Course
               </Link>
             </button>

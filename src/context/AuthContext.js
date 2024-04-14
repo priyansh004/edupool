@@ -3,7 +3,7 @@ import React from "react";
 import { onAuthStateChanged, getAuth } from "firebase/auth";
 import app from "@/firebase/config";
 
-const auth = getAuth(app);
+export const auth = getAuth(app);
 
 export const AuthContext = React.createContext({});
 
@@ -17,8 +17,11 @@ export const AuthContextProvider = ({ children }) => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         setUser(user);
+        console.log("yes");
       } else {
         setUser(null);
+        console.log("no");
+
       }
       setLoading(false);
     });
